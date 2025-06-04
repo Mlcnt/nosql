@@ -3,7 +3,8 @@ const serviceAccount = require('./firebase-key.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://nosql-crud-a11a9.firebaseio.com" 
+  // Add your databaseURL if needed
+  databaseURL: "https://nosql-crud-95ae5.firebaseio.com" 
 });
 
 const db = admin.firestore();
